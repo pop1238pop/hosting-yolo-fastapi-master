@@ -7,10 +7,6 @@ from yolofastapi.routers import yolo
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"hello": "world"}
-
 
 app.add_middleware(
     CORSMiddleware,
